@@ -1,24 +1,27 @@
 {
   "name": "xcode-pitch-dark-theme",
-  "displayName": "Xcode Pitch Dark Theme",
-  "description": "XCode theme with full dark background",
-  "version": "1.1.0",
+  "displayName": "Xcode Pitch Theme",
+  "description": "Xcode-inspired syntax highlighting with pitch-black dark and crisp light themes",
+  "version": "1.2.0",
   "publisher": "albertochamorro",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },
   "scripts": {
-    "build": "vsce package"
+    "generate": "python3 scripts/build_light.py",
+    "test": "python3 -m unittest discover -s tests -v",
+    "build": "npm run generate && npm test && vsce package"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/achamorro-dev/xcode-pitch-dark-theme"
+    "url": "https://github.com/achamorro-dev/xcode-pitch-theme"
   },
   "keywords": [
     "xcode",
     "theme",
     "dark",
+    "light",
     "pitch",
     "darkness",
     "full dark",
@@ -38,7 +41,15 @@
         "label": "Xcode Pitch Dark Bordered Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/Xcode Pitch Dark Bordered Theme-color-theme.json"
+      },
+      {
+        "label": "Xcode Pitch Light",
+        "uiTheme": "vs",
+        "path": "./themes/Xcode Pitch Light-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
   }
 }

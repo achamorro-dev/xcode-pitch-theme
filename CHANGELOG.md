@@ -1,6 +1,14 @@
 # Changelog
 
-All notable changes to the "xcode-pitch-dark-theme" extension will be documented in this file.
+All notable changes to Xcode Pitch Theme will be documented in this file.
+
+## Unreleased — 1.2.0
+
+- Rename the project and display name to **Xcode Pitch Theme**.
+- Add **Xcode Pitch Light**, with a white background and contrast-adjusted Xcode syntax colors.
+- Keep both existing Dark themes and their selection names unchanged.
+- Preserve the Marketplace extension ID, `albertochamorro.xcode-pitch-dark-theme`, so existing installations continue receiving updates.
+- Add a reproducible Light generator and theme compatibility/contrast tests.
 
 ## 1.1.0 - 2025-02-23
 
