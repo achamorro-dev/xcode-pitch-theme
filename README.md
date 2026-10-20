@@ -43,6 +43,24 @@ Light keeps the original TextMate scopes and font styles, with colors adjusted f
 
 ![Xcode Pitch Dark Bordered Theme](images/screenshots/xcode-pitch-dark-bordered-theme.png)
 
+### Light — VSCode
+
+![Xcode Pitch Light in VSCode showing TypeScript from EventosWiki](images/screenshots/xcode-pitch-light-eventoswiki.png)
+
+### Neovim inside Ghostty
+
+The same public TypeScript file, using the standalone Neovim port and the matching Ghostty palette.
+
+#### Dark
+
+![Xcode Pitch Dark in Neovim and Ghostty showing EventosWiki](images/screenshots/neovim-ghostty-dark-eventoswiki.png)
+
+#### Light
+
+![Xcode Pitch Light in Neovim and Ghostty showing EventosWiki](images/screenshots/neovim-ghostty-light-eventoswiki.png)
+
+These new screenshots are real application-window captures using code from the author's open-source project [EventosWiki](https://github.com/achamorro-dev/eventoswiki), at commit [`57c98be`](https://github.com/achamorro-dev/eventoswiki/tree/57c98be4e4d315169517a7ad1b89f98a564f87fc). See [capture details and attribution](images/screenshots/README.md).
+
 ## Installation
 
 All generated themes are committed, so using the terminal themes does **not** require npm or a build step. Clone or download this repository:
