@@ -1,0 +1,26 @@
+# Generated theme fragment: merge into config.toml, preserving other tables.
+[theme]
+name = "terminal"
+auto_switch = false
+
+[theme.custom]
+panel_bg = "#000000"
+sidebar_bg = "#000000"
+text = "#dfdfdf"
+accent = "#6699ff"
+active_row_bg = "#101014"
+selection_bg = "#646e83"
+surface0 = "#101014"
+surface1 = "#202026"
+surface_dim = "#101014"
+overlay0 = "#35353d"
+overlay1 = "#9a9c9d"
+subtext0 = "#9a9c9d"
+red = "#fc6a5d"
+green = "#a0d07d"
+yellow = "#d0bf69"
+blue = "#6699ff"
+mauve = "#d0a8ff"
+teal = "#5dd8ff"
+peach = "#ffa14f"
+

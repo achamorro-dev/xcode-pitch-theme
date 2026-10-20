@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parent.parent
-SOURCE = ROOT / "themes" / "Xcode Pitch Dark Theme-color-theme.json"
+SOURCE = ROOT / "templates" / "vscode" / "dark.jsonc"
 TARGET = ROOT / "themes" / "Xcode Pitch Light-color-theme.json"
 SOURCE_ROLES = {
     "#000000": "background", "#dfdfdf": "foreground", "#9a9c9d": "muted",
@@ -33,9 +33,9 @@ def load_jsonc(text):
     return json.loads(clean)
 
 
-def generate():
+def generate(palette=None):
     source = load_jsonc(SOURCE.read_text())
-    palette = json.loads((ROOT / "palettes" / "light.json").read_text())
+    palette = palette or json.loads((ROOT / "palettes" / "light.json").read_text())
     mapping = {color: palette[role] for color, role in SOURCE_ROLES.items()}
 
     def convert(value):

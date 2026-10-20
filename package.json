@@ -9,7 +9,8 @@
     "vscode": "^1.80.0"
   },
   "scripts": {
-    "generate": "python3 scripts/build_light.py",
+    "generate": "python3 scripts/build_themes.py",
+    "check": "python3 scripts/build_themes.py --check",
     "test": "python3 -m unittest discover -s tests -v",
     "build": "npm run generate && npm test && vsce package"
   },

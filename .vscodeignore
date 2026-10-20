@@ -6,6 +6,8 @@ node_modules/**
 scripts/**
 tests/**
 palettes/**
+extras/**
+templates/**
 package-lock.json
 *.vsix
 **/.DS_Store
