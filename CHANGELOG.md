@@ -2,7 +2,7 @@
 
 All notable changes to Xcode Pitch Theme will be documented in this file.
 
-## Unreleased — 1.2.0
+## 1.2.0 - 2026-10-20
 
 - Rename the project and display name to **Xcode Pitch Theme**.
 - Add **Xcode Pitch Light**, with a white background and contrast-adjusted Xcode syntax colors.
@@ -11,6 +11,7 @@ All notable changes to Xcode Pitch Theme will be documented in this file.
 - Add a reproducible Light generator and theme compatibility/contrast tests.
 - Centralize Dark/Light palettes and ship generated Ghostty, OpenCode V2, Herdr and standalone Neovim adaptations.
 - Document installation for every tool; keep personal synchronization settings outside the theme distribution.
+- Add real VSCode Light and Neovim/Ghostty screenshots using the open-source EventosWiki project, with source attribution.
 
 ## 1.1.0 - 2025-02-23
 

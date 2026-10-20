@@ -80,7 +80,7 @@ Search for **Xcode Pitch Theme** in Extensions, or use the stable extension ID:
 code --install-extension albertochamorro.xcode-pitch-dark-theme
 ```
 
-Choose a variant with **Preferences: Color Theme**. Light is included in version **1.2.0**, currently prepared for release; until that version is published, install the locally built VSIX below.
+All three variants, including **Xcode Pitch Light**, are available on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=albertochamorro.xcode-pitch-dark-theme) starting with version **1.2.0**. Choose a variant with **Preferences: Color Theme**.
 
 ### Follow the system appearance
 
@@ -178,7 +178,7 @@ The repository and display name changed from **Xcode Pitch Dark Theme** to **Xco
 
 `albertochamorro.xcode-pitch-dark-theme`
 
-Existing users will receive updates through the same extension. Both existing Dark selection names are unchanged, so their settings continue working. GitHub redirects the previous repository URL to the new one.
+Existing users continue receiving updates through the same extension. Both existing Dark selection names are unchanged, so their settings continue working. GitHub redirects the previous repository URL to the new one.
 
 ## Development
 
