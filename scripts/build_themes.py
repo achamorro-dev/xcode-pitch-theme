@@ -111,7 +111,10 @@ def herdr_theme(dark, light, mode="auto"):
         fields = {"panel_bg": "background", "sidebar_bg": "background", "text": "foreground",
                   "accent": "accent", "active_row_bg": "surface", "selection_bg": "selection",
                   "surface0": "surface", "surface1": "raised", "surface_dim": "surface",
-                  "overlay0": "border", "overlay1": "muted", "subtext0": "muted",
+                  # Herdr uses overlay0 for conversation titles and subtext0 for
+                  # inactive Space names, not just decorative/secondary chrome.
+                  # Use the mode's text foreground; layouts can dim context rows.
+                  "overlay0": "foreground", "overlay1": "muted", "subtext0": "foreground",
                   "red": "red", "green": "green", "yellow": "yellow", "blue": "blue",
                   "mauve": "purple", "teal": "cyan", "peach": "orange"}
         text += "".join(f'{key} = "{p[value]}"\n' for key, value in fields.items())

@@ -2,6 +2,7 @@ import copy
 import json
 from pathlib import Path
 import sys
+import tomllib
 import unittest
 from unittest.mock import patch
 
@@ -52,6 +53,18 @@ class ExtrasTests(unittest.TestCase):
 
             resolve(resolved)
             self.assertEqual(resolved["syntax"]["keyword"], themes.palettes()[mode]["keyword"])
+
+    def test_herdr_sidebar_titles_follow_the_mode_foreground(self):
+        palettes = themes.palettes()
+        for mode in ("auto", "dark", "light"):
+            config = tomllib.loads(themes.herdr_theme(palettes["dark"], palettes["light"], mode))
+            custom = config["theme"]["custom"]
+            for current in (("dark", "light") if mode == "auto" else (mode,)):
+                colors = custom[current] if mode == "auto" else custom
+                for role in ("text", "overlay0", "subtext0"):
+                    self.assertEqual(colors[role], palettes[current]["foreground"])
+                self.assertEqual(colors["overlay1"], palettes[current]["muted"])
+                self.assertNotEqual(colors["overlay0"], palettes[current]["border"])
 
     def test_one_palette_change_reaches_all_ports(self):
         for mode, editor in (("dark", "Xcode Pitch Dark Theme"), ("light", "Xcode Pitch Light")):

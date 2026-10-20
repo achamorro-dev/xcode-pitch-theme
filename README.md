@@ -140,6 +140,8 @@ Merge the `[theme]` table and its children from one fragment into `~/.config/her
 
 **Do not replace your whole config or append a second `[theme]` table.** Herdr does not provide a TOML include directive. Preserve your other tables, including keybindings and workspaces. Then run `herdr server reload-config`; if the client does not refresh, choose **reload config** from its global menu.
 
+Sidebar conversation titles and inactive Space names inherit the mode's primary foreground. In custom sidebar rows, keep titles bold and undimmed, and dim context such as locations or branches. Avoid fixed `fg` colors on titles: they do not switch with the theme and can disappear in the opposite appearance.
+
 ### Neovim
 
 Add `extras/neovim` to your runtime path, then select the theme:
